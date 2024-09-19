@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-image: url("/images/background.png");
+}
+.announcement-text {
+  background-color: #80f785;
+  margin: 0;
+}
+
+.navbar {
+  background-color: #060d19;
+}
+
+.navbar-custom {
+  background-color: #060d19;
+}
+
+.btn-nav {
+  background: linear-gradient(to left, #6c30ff, #a63fb2);
+  color: white;
+  border: none;
+  padding: 5px 30px;
+}
+
+.btn-nav:hover {
+  opacity: 0.9;
+}
+
+#clock {
+  font-family: "Digital Numbers";
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 23.06px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #ff6634;
+  background-color: #000000;
+  padding: 16px 14.57px;
+  width: fit-content;
+  border: 1px solid #220d39;
+  border-radius: 4.86px;
+}
+#date {
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 400;
+  color: #aa5fff;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+#time {
+  font-family: "Roboto";
+  font-size: 199px;
+  font-weight: 700;
+  background: linear-gradient(-10deg, #6c30ff, #8430e2, #ff6634);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.text-lookback {
+  font-family: "Roboto";
+  font-size: 32px;
+  font-weight: 700;
+  color: #b39bec;
+}
+
+.text-how {
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.btn-hub {
+  background: linear-gradient(to left, #6c30ff, #a63fb2);
+  color: white;
+  border: none;
+  padding: 20px 35px;
+  border-radius: 9px;
+}
+
+.btn-hub:hover {
+  opacity: 0.9;
+}
+
+.btn-join {
+  background: white;
+  color: blue;
+  border: none;
+  padding: 20px 35px;
+  border-radius: 9px;
+}
+
+.btn-join:hover {
+  opacity: 0.9;
+}
+
+.card-1 {
+  background-color: #0c0a0d;
+  color: white;
+  border-radius: 12px;
+  padding: 20px;
+}
