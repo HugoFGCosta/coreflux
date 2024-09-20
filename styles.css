@@ -336,3 +336,50 @@ body {
 .btn-fix:focus {
   background: linear-gradient(to right, #8430e2, #6c30ff, #ff6634);
 }
+
+/* secção work slider*/
+
+.title-manu {
+  width: 903px;
+  height: 59px;
+}
+
+.text-title-worked {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 36px;
+}
+
+.text-pain-points {
+  color: #b39bec;
+}
+
+/* carrossel */
+.carousel-inner .carousel-item {
+  transition: transform 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Configurações para telas médias e grandes */
+@media (min-width: 768px) {
+  .carousel-inner .carousel-item {
+    width: 33.333%;
+  }
+
+  .carousel-inner .carousel-item-right.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(33.333%);
+  }
+
+  .carousel-inner .carousel-item-left.active,
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-33.333%);
+  }
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left {
+  transform: translateX(0);
+}
