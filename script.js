@@ -28,21 +28,45 @@ function checkTime(i) {
 startCountdown();
 //fim de controlo de relógio
 
-//carrossel
+//Slider
 
-document.addEventListener("DOMContentLoaded", function () {
-  let items = document.querySelectorAll(".carousel .carousel-item");
+// botões
+const btnLeft = document.getElementById("prev_btn");
+const btnRight = document.getElementById("next_btn");
 
-  items.forEach((el) => {
-    const minPerSlide = 3;
-    let next = el.nextElementSibling;
-    for (var i = 1; i < minPerSlide; i++) {
-      if (!next) {
-        next = items[0];
-      }
-      let cloneChild = next.cloneNode(true);
-      el.appendChild(cloneChild.children[0]);
-      next = next.nextElementSibling;
-    }
-  });
-});
+// Slider
+const slider = document.querySelector(".container .slider");
+
+btnRight.addEventListener("click", nextSlide);
+function nextSlide() {
+  slider.appendChild(slider.firstElementChild);
+}
+
+btnLeft.addEventListener("click", prevSlide);
+function prevSlide() {
+  slider.prepend(slider.lastElementChild);
+}
+
+// slide automático
+function autoSlide() {
+  deleteInterval = setInterval(timer, 4000);
+  function timer() {
+    nextSlide();
+  }
+}
+autoSlide();
+
+// para o slide automático com o rato por cima
+slider.addEventListener("mouseover", deleteAutoSliding);
+btnRight.addEventListener("mouseover", deleteAutoSliding);
+btnLeft.addEventListener("mouseover", deleteAutoSliding);
+
+function deleteAutoSliding() {
+  clearInterval(deleteInterval);
+}
+
+// Retoma o slide automatico quando rato sai
+slider.addEventListener("mouseout", autoSlide);
+btnRight.addEventListener("mouseout", autoSlide);
+btnLeft.addEventListener("mouseout", autoSlide);
+//fim de slider
