@@ -6,6 +6,8 @@
 
 body {
   background-image: url("/images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* secção de navegação */
@@ -269,9 +271,16 @@ body {
 }
 
 /* secção world connected */
-
 .world-connected-section {
-  margin-top: 150px;
+  padding-top: 200px;
+  padding-bottom: 50px;
+}
+
+.card-robot {
+  background-color: #130b35;
+  border-radius: 12px;
+  width: 1300px;
+  height: 579px;
 }
 
 .text-world-connected {
@@ -283,4 +292,47 @@ body {
 
 .text-however {
   color: #7800ff;
+}
+
+.btn-light {
+  color: #7800ff;
+}
+
+.title-robot {
+  font-size: 30px;
+  font-weight: 500;
+  color: #6c30ff;
+  line-height: 32px;
+  margin: 0 0 20px 0;
+}
+
+.text-robot {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.btn-fix {
+  width: 177px;
+  height: 62.86px;
+  border-radius: 9px;
+  background: linear-gradient(
+    to right,
+    #6c30ff 30%,
+    #8430e2 100%,
+    #ff6634 100%
+  );
+  color: white;
+  border: none;
+  padding: 20px 48px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 24px;
+  transition: all 0.3s ease;
+}
+
+.btn-fix:hover,
+.btn-fix:focus {
+  background: linear-gradient(to right, #8430e2, #6c30ff, #ff6634);
 }
