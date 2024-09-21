@@ -454,6 +454,10 @@ body {
 
 /*secção made it ourselves*/
 
+.made-ourselves-section {
+  margin-bottom: 50px;
+}
+
 .made-ourselves-section h1 {
   font-size: 64px;
   font-weight: 600;
@@ -469,10 +473,64 @@ body {
   font-size: 21px;
   font-weight: 400;
   line-height: 26px;
-  margin-top: 35px;
+  margin: 35px 0 100px 0;
 }
 
 .video-wrapper iframe {
   border-radius: 16px;
   overflow: hidden;
+}
+
+.btn-wrapper .btn {
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 9px;
+  line-height: 1.5;
+  transition: background 0.3s;
+  height: 64px;
+  min-width: 194px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-youtube {
+  background-color: white;
+  color: #000;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 64px;
+  border: none;
+  min-width: 180px;
+  transition: all 0.3s ease;
+}
+
+.btn-get-started {
+  background-color: #6b46c1;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 64px;
+  min-width: 180px;
+  padding: 0 30px;
+  border: none;
+  border-radius: 9px;
+  transition: all 0.3s ease;
+}
+
+.btn-youtube:hover,
+.btn-get-started:hover {
+  opacity: 0.8;
+  background-color: #8368c0;
+}
+
+.icon-image {
+  display: inline-block;
+  width: 30px;
+  height: 50px;
+  margin-right: 10px;
 }
