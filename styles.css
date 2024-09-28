@@ -1016,10 +1016,6 @@ img {
   color: #b39bec;
 }
 
-.btn-assets {
-  margin: 30px 80px 30px 0;
-}
-
 .assets-slider {
   width: 100%;
   box-sizing: border-box;
@@ -1037,7 +1033,7 @@ img {
 .assets-slider .slide-content {
   margin: 0 auto;
   text-align: center;
-  background-color: #f0f0f0;
+  background-color: #14152b;
   padding: 20px;
   border-radius: 10px;
   height: 100%;
@@ -1077,4 +1073,115 @@ img {
   width: 16px;
   height: 16px;
   margin: auto;
+}
+
+.assets-slider h3 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.assets-slider p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.text-browse {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 20px;
+}
+
+@media (max-width: 767.98px) {
+  .text-browse {
+    width: 343px;
+    height: 64px;
+  }
+}
+
+@media (min-width: 768px) {
+  .text-browse {
+    width: 280px;
+    height: 64px;
+  }
+}
+
+/* Seção de broker */
+.broker-section {
+  margin: 50px 0;
+}
+
+.title-section-broker {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 36px;
+}
+
+.text-down-broker {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.background-broker {
+  background-color: #000000;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.broker-section img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.broker-image-column {
+  display: flex;
+}
+
+.broker-image-column img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text-center-broker {
+  margin: auto;
+}
+
+.btn-know {
+  background: linear-gradient(to left, #6c30ff, #8430e2, #ff6634 130%);
+  width: 162px;
+  height: 52px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-know:hover {
+  background: linear-gradient(to left, #6c30ff, #8430e2, #ff6634 100%);
+}
+
+.try-broker {
+  color: #ff6634;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+@media (max-width: 768px) {
+  .title-section-broker {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .text-down-broker {
+    text-align: center;
+  }
+
+  .broker-section .col-12.col-md-8 {
+    padding: 20px;
+  }
 }
