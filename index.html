@@ -9,6 +9,19 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <!-- Slick CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <!-- Tema do Slick-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+
     <link rel="stylesheet" href="styles.css" />
     <title>Coreflux</title>
   </head>
@@ -133,19 +146,21 @@
         <!-- Primeira coluna -->
         <div class="col-md-4">
           <div class="card-1">
-            <div class="text-light-icon d-flex">
+            <div
+              class="text-light-icon d-flex flex-column flex-md-row align-items-center"
+            >
               <div
-                class="d-flex flex-column justify-content-center text-start col-md-5 ms-5"
+                class="d-flex flex-column justify-content-center text-center text-md-start col-12 col-md-5 ms-md-5"
               >
                 <span class="fs-1 fw-bold text-primary w-100">faster</span>
                 <span class="fs-4 text-primary w-100">IIoT integration</span>
               </div>
-              <div class="lightning-icon col-md-6">
+              <div class="lightning-icon col-12 col-md-6">
                 <img src="/images/light.png" alt="light" />
               </div>
             </div>
             <div
-              class="d-flex flex-column justify-content-center text-start col-md-5 ms-5 mt-5"
+              class="d-flex flex-column justify-content-center align-items-center text-center text-md-start col-12 col-md-5 ms-md-5 mt-5"
             >
               <span class="text-upto fs-4 text-white">up to</span>
               <span class="text-72x display-1 fw-bold text-white">72x</span>
@@ -444,7 +459,7 @@
             </div>
           </div>
           <div class="col-md-12 mt-4">
-            <div class="btn-wrapper d-flex justify-content-center">
+            <div class="btn-wrapper d-flex justify-content-center gap-3">
               <a href="#" class="btn btn-youtube"
                 ><span>
                   <img
@@ -455,19 +470,161 @@
                 </span>
                 Watch More</a
               >
-              <a href="#" class="btn btn-get-started ms-3">Get Started</a>
+              <a href="#" class="btn btn-get-started">Get Started</a>
             </div>
           </div>
         </div>
       </div>
     </section>
-
     <!-- Fim secção de we made it ourselfs-->
+
+    <!--A partir daqui comecei a aplicar o conceito mobile first explicado! Assim como o novo slide aconselhado-->
+
+    <!--Just what we ordered-->
+    <section class="just-what-we-ordered-section">
+      <div class="container text-white">
+        <div class="row">
+          <div class="col-12 text-start text-md-center">
+            <h1 class="title-section-just">
+              Just what the<span class="text-doctor"> doctor ordered.</span>
+            </h1>
+            <p class="text-intro-just mt-3">
+              Whether it's your first step into controlling a smart house, or a
+              giant leap in your quest to create a Digital Twin for a factory
+              floor,
+              <span class="fw-bold"
+                >Coreflux will redefine what you can achieve with simple tools
+                and a truly intuitive hub.</span
+              >
+            </p>
+          </div>
+        </div>
+        <div class="row align-items-center mt-5">
+          <div class="col-12 col-md-6 mb-4 mb-md-0">
+            <img
+              src="./images/Rectangle362.png"
+              alt="Descrição da Imagem"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-12 col-md-6 text-start text-md-start">
+            <p class="text-down-hub">
+              We deliver
+              <span class="fw-bold">out-of-the-box digitalization</span> in the
+              perfect size for each project. <br /><br />
+              <span class="text-once">
+                Once you install our
+                <span class="text-doctor">free and improved Hub</span>, you can
+                browse the ever-expanding Asset Library with a Coreflux account.
+              </span>
+            </p>
+            <div class="d-flex justify-content-center justify-content-md-start">
+              <button class="btn btn-primary mt-3 custom-fixed-width">
+                <img
+                  src="./images/microsoft.png"
+                  alt="windowsIcon"
+                  style="
+                    width: 20px;
+                    height: 20px;
+                    margin-right: 5px;
+                    vertical-align: middle;
+                  "
+                />
+                Download Hub 1.2
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Fim secção de Just what we ordered-->
+    <!--Inicio de secção de Assets-->
+    <section class="assets-section">
+      <div class="container text-white">
+        <div class="row">
+          <div class="col-12 text-start text-md-center">
+            <h1 class="title-section-assets">
+              Install a couple of Assets. Or a couple of thousand.
+            </h1>
+            <p class="text-intro-assets mt-3">
+              You will be left wondering how you lived this long without them.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Slider-->
+      <div class="d-flex justify-content-end btn-assets">
+        <div class="btn navigation-btns gap-3">
+          <img
+            src="/images/arrow_left.png"
+            id="prev_btn_slick"
+            alt="Previous"
+          />
+          <img src="/images/arrow_rigth.png" id="next_btn_slick" alt="Next" />
+        </div>
+      </div>
+      <div class="assets-slider">
+        <div class="slide">
+          <div
+            class="slide-content d-flex flex-column justify-content-center align-items-center text-center"
+          >
+            <img src="./images/mqtt.png" alt="Imagem do Slide 1" class="mb-3" />
+            <h3>Título 1</h3>
+            <p>Descrição do slide 1.</p>
+            <button
+              class="btn-slide btn btn-primary d-flex align-items-center mt-3"
+            >
+              <img src="./images/arrow.png" alt="Ícone de seta" class="me-2" />
+              Saiba Mais
+            </button>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-content">
+            <img src="./images/docker.png" alt="Imagem do Slide 2" />
+            <h3>Título 2</h3>
+            <p>Descrição do slide 2.</p>
+            <button class="btn-slide">
+              <img src="./images/arrow.png" alt="Ícone de seta" /> Saiba Mais
+            </button>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-content">
+            <img src="./images/telegram.png" alt="Imagem do Slide 3" />
+            <h3>Título 3</h3>
+            <p>Descrição do slide 3.</p>
+            <button class="btn-slide">
+              <img src="./images/arrow.png" alt="Ícone de seta" /> Saiba Mais
+            </button>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-content">
+            <img src="./images/firebase.png" alt="Imagem do Slide 4" />
+            <h3>Título 4</h3>
+            <p>Descrição do slide 4.</p>
+            <button class="btn-slide">
+              <img src="./images/arrow.png" alt="Ícone de seta" /> Saiba Mais
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Fim de secção de Assets-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Slick JS -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <!-- meu script-->
+    <script src="script.js"></script>
+    <!-- Bootstrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script src="script.js"></script>
   </body>
 </html>

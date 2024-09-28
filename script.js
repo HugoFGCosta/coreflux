@@ -70,3 +70,32 @@ slider.addEventListener("mouseout", autoSlide);
 btnRight.addEventListener("mouseout", autoSlide);
 btnLeft.addEventListener("mouseout", autoSlide);
 //fim de slider
+
+//slick slider
+$(document).ready(function () {
+  $(".assets-slider").slick({
+    autoplay: true,
+    autoplaySpeed: 3000,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    prevArrow: $("#prev_btn_slick"),
+    nextArrow: $("#next_btn_slick"),
+    arrows: true,
+    centerMode: true,
+    variableWidth: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          centerMode: false,
+          variableWidth: false,
+        },
+      },
+    ],
+  });
+});
+
+//fim de slick slider
