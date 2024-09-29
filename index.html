@@ -70,13 +70,27 @@
                   <a class="nav-link active text-white" href="#">Community</a>
                 </li>
               </ul>
-              <div class="d-flex">
-                <button class="btn btn-nav" type="submit">Get Started</button>
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active text-white me-5" href="#"
-                      >Account</a
+              <div
+                class="d-flex flex-column flex-lg-row align-items-start button-wrapper"
+              >
+                <button class="btn btn-nav mt-2 mt-lg-0 ms-lg-3" type="submit">
+                  Get Started
+                </button>
+                <ul class="navbar-nav ms-lg-3">
+                  <li class="nav-item text-account">
+                    <a
+                      class="nav-link active d-flex align-items-center"
+                      href="#"
                     >
+                      <img
+                        src="/images/account-icon.png"
+                        alt="Account"
+                        width="20"
+                        height="20"
+                        class="account-icon"
+                      />
+                      <span class="ms-2">Account</span>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -85,6 +99,7 @@
         </nav>
       </div>
     </section>
+
     <!-- Fim Secção anuncio e header -->
 
     <!-- Inicio Secção relógio e data -->
@@ -114,66 +129,87 @@
           "How did anything ever function without Coreflux?"
         </p>
       </div>
-      <div class="d-flex justify-content-center gap-3 mt-5 mb-5">
-        <button class="btn btn-hub">
-          <img
-            class="me-2"
-            src="/images/microsoft.png"
-            alt="windows"
-            width="20"
-            height="20"
-          />Download Hub 1.2
-        </button>
-        <button class="btn btn-join">
-          <img
-            class="me-2"
-            src="/images/pessoas.png"
-            alt="windows"
-            width="20"
-            height="20"
-          />Join the Community
-        </button>
+      <div class="row d-flex justify-content-center gap-3 mt-5 mb-5">
+        <div class="col-12 col-md-5 d-flex justify-content-md-end">
+          <button class="btn btn-hub w-md-auto">
+            <img
+              class="me-2"
+              src="/images/microsoft.png"
+              alt="windows"
+              width="20"
+              height="20"
+            />Download Hub 1.2
+          </button>
+        </div>
+        <div class="col-12 col-md-5 d-flex justify-content-md-start">
+          <button class="btn btn-join w-md-auto">
+            <img
+              class="me-2"
+              src="/images/pessoas.png"
+              alt="windows"
+              width="20"
+              height="20"
+            />Join the Community
+          </button>
+        </div>
       </div>
     </section>
     <!-- Fim Secção de join community -->
-    <!-- Inicio Secção de Industrial Digitalization-->
-    <section class="container container-custom text-center text-white">
+
+    <!-- Inicio Secção de Industrial Digitalization -->
+    <section class="container text-center text-white industrial-slider">
       <h1>
         In the realm of Industrial Digitalization and Automation, this is what
         we do:
       </h1>
-      <div class="container row g-4 mt-5">
+      <div class="container row g-4 mt-5 slider-cards">
         <!-- Primeira coluna -->
-        <div class="col-12 col-md-4">
-          <div class="card-1">
+        <div class="col-12 col-md-4 card1">
+          <div class="card1 full-height-card">
             <div
-              class="text-light-icon d-flex flex-column flex-md-row align-items-center"
+              class="text-light-icon d-flex flex-row flex-md-row justify-content-between"
             >
               <div
-                class="d-flex flex-column justify-content-center text-center text-md-start col-12 col-md-5 ms-md-5"
+                class="text-content d-flex flex-column text-md-start col-6 col-md-6"
               >
-                <span class="fs-1 fw-bold text-primary w-100">faster</span>
-                <span class="fs-4 text-primary w-100">IIoT integration</span>
+                <span class="faster-text-1">faster</span>
+                <span class="faster-text-2">IIoT integration</span>
               </div>
-              <div class="lightning-icon col-12 col-md-6">
+              <div
+                class="lightning-icon col-2 col-md-6 d-flex justify-content-md-end"
+              >
                 <img src="/images/light.png" alt="light" class="img-fluid" />
               </div>
             </div>
             <div
-              class="d-flex flex-column justify-content-center align-items-center text-center text-md-start col-12 col-md-5 ms-md-5 mt-5"
+              class="d-flex flex-row align-items-center text-center text-md-start col-12 col-md-5 ms-md-5 mt-3"
             >
-              <span class="text-upto fs-4 text-white">up to</span>
-              <span class="text-72x display-1 fw-bold text-white">72x</span>
+              <p class="text-upto">
+                up to<br /><span class="text-72x">72x</span>
+              </p>
+            </div>
+            <div
+              class="text-description col-12 col-md-10 ms-md-5 mt-4 d-md-none"
+            >
+              <p class="text-white mb-1">
+                You could stick to painstaking integrations through code changes
+                on a device. Or...
+              </p>
+              <p class="text-primary mb-0">
+                You can accelerate the process up to 72x with Coreflux.
+              </p>
             </div>
           </div>
         </div>
 
         <!-- Segunda coluna com dois cards -->
-        <div class="col-md-4">
+        <div class="col-12 col-md-4">
           <div
-            class="card-2 mb-3 d-flex justify-content-between align-items-end p-3"
+            class="card2 half-height-card mb-3 d-flex justify-content-between align-items-end p-3"
           >
-            <div class="text-content d-flex flex-column justify-content-end">
+            <div
+              class="text-content d-flex flex-column justify-content-end text-card2"
+            >
               <div class="text-line">1 set-up</div>
               <div class="text-line">session</div>
             </div>
@@ -182,15 +218,14 @@
             </div>
           </div>
 
-          <div class="box-white position-relative">
+          <div class="card box-white half-height-card position-relative">
             <div class="text-content-card3 text-start">
-              <p class="fw-bold">
+              <p class="text-card3">
                 Stop pulling your hair out because of endless implementation
                 issues.
               </p>
-              <p class="fw-bold">
-                We give you building blocks to play with and assemble at
-                willSnappy.
+              <p class="text-card3">
+                We give you building blocks to play with and assemble at will.
               </p>
               <img
                 src="/images/Navigation.png"
@@ -198,9 +233,9 @@
                 class="navigation-icon position-absolute"
               />
               <p>
-                <span class="highlight-purple">
-                  Now you can deploy complex<br />
-                  system architectures easily. Mighty.
+                <span class="text-card3 highlight-purple">
+                  Now you can deploy complex system architectures easily.
+                  Mighty.
                 </span>
               </p>
             </div>
@@ -208,20 +243,22 @@
         </div>
 
         <!-- Terceira coluna -->
-        <div class="col-md-4">
-          <div class="perspective-box">
-            <p class="firstext-col3">
+        <div class="col-12 col-md-4">
+          <div class="card perspective-box full-height-card">
+            <p class="firstext-col3 text-start text-card3-1">
               If you're working on a project involving IoT in any capacity,
               <span class="fw-bold"
                 >Coreflux is the single best path you can take right now.</span
               >
             </p>
-            <h2 class="secondtext-col3 mt-5">Perspective</h2>
-            <p class="thirdtext-col3">
+            <h2 class="secondtext-col3 mt-5 text-start text-card3-2">
+              Perspective
+            </h2>
+            <p class="thirdtext-col3 text-start text-card3-3">
               If this were a race, while your competition travelled from New
               York to Montréal...
             </p>
-            <h3 class="thirdtext-col3 fw-bold">
+            <h3 class="thirdtext-col3 fw-bold text-start text-card3-4">
               YOU WOULD CIRCLE THE ENTIRE PLANET.
             </h3>
           </div>
@@ -230,7 +267,7 @@
       <p class="mt-4 text-based">Based on real users' Success Cases.</p>
     </section>
 
-    <!-- Fim Secção de Industrial Digitalization-->
+    <!-- Fim secção de industrial slider -->
 
     <!-- Inicio secção de marcas-->
     <section class="brands-section mt-5">
@@ -341,65 +378,72 @@
     <!-- Inicio secção de worker manufacturing-->
     <section class="worker-manufacturing-section">
       <div class="container">
-        <div class="row a justify-content-center">
-          <div
-            class="col-md-12 text-center mt-5 mb-5 title-manu justify-content-center"
-          >
+        <div class="row justify-content-center">
+          <div class="col-md-12 text-center mt-5 mb-5 title-manu">
             <h1 class="text-white text-title-worked">
-              We worked in manufacturin for years,
+              We worked in manufacturing for years,
               <span class="text-pain-points"
                 >and dealt with these pain points every day:</span
               >
             </h1>
           </div>
         </div>
-        <!--slider -->
-        <div class="container">
-          <!--  Botões de navegação-->
-          <header class="section-header justify-content-end">
-            <div class="btn navigation-btns">
-              <img src="/images/arrow_left.png" id="prev_btn" alt="Previous" />
-              <img src="/images/arrow_rigth.png" id="next_btn" alt="Next" />
-            </div>
-          </header>
-          <div class="slider">
-            <div class="slider-item">
-              <img src="images/pino2.png" />
-            </div>
-            <div class="slider-item">
-              <img src="images/pino2.png" />
-            </div>
-            <div class="slider-item">
-              <img src="images/pino.png" />
-            </div>
-            <div class="slider-item">
-              <img src="images/circulodados.png" />
-            </div>
-            <div class="slider-item">
-              <img src="images/calculadora.png" />
-            </div>
-            <div class="slider-item">
-              <img src="images/calculadora.png" />
-            </div>
-            <div class="slider-item">
-              <img src="images/circulodados2.png" />
-            </div>
-            <div class="slider-item">
-              <img src="images/calculadora2.png" />
-            </div>
+
+        <!-- Slider navigation buttons -->
+        <div class="d-flex justify-content-end btn-assets">
+          <div class="btn navigation-btns gap-3">
+            <img
+              src="/images/arrow_left.png"
+              id="prev_btn_worker"
+              alt="Previous"
+            />
+            <img
+              src="/images/arrow_rigth.png"
+              id="next_btn_worker"
+              alt="Next"
+            />
           </div>
         </div>
+
+        <!-- Slider -->
+        <div class="worker-slider">
+          <div class="slide">
+            <img src="images/pino2.png" alt="Slide 1" />
+          </div>
+          <div class="slide">
+            <img src="images/pino2.png" alt="Slide 2" />
+          </div>
+          <div class="slide">
+            <img src="images/pino.png" alt="Slide 3" />
+          </div>
+          <div class="slide">
+            <img src="images/circulodados.png" alt="Slide 4" />
+          </div>
+          <div class="slide">
+            <img src="images/calculadora.png" alt="Slide 5" />
+          </div>
+          <div class="slide">
+            <img src="images/calculadora.png" alt="Slide 6" />
+          </div>
+          <div class="slide">
+            <img src="images/circulodados2.png" alt="Slide 7" />
+          </div>
+          <div class="slide">
+            <img src="images/calculadora2.png" alt="Slide 8" />
+          </div>
+        </div>
+
         <div
           class="text-ourtime d-flex justify-content-center align-items-center text-white"
         >
-          <p class="text-center">
+          <p class="text-center mt-5">
             Our time and effort were being wasted in minor routine tasks and
             endless hours of travelling around to push a button.
           </p>
         </div>
       </div>
     </section>
-    <!-- Fim secção de worker manufacturing-->
+    <!-- Fim secção de worker manufacturing -->
 
     <!-- Inicio secção de magic-->
     <section class="magic-section">
@@ -1072,36 +1116,32 @@
       <div class="container mt-5">
         <div class="row align-items-start">
           <!-- Logo -->
-          <div class="col-12 col-md-3 text-center text-md-start">
+          <div class="col-12 col-md-2 text-center text-md-start">
             <img
               src="./images/coreflux_footer.png"
               alt="Logo Coreflux"
               class="footer-logo mb-3"
             />
           </div>
-
           <!-- Subscribe -->
-          <div class="col-12 col-md-3 footer-subscribe">
+          <div class="col-12 col-md-4 footer-subscribe">
             <h5 class="footer-subscribe-title">Subscribe</h5>
             <p class="footer-subscribe-text">
               Join our newsletter to stay up to date on features and releases.
             </p>
-            <!-- Formulário de subscrição -->
             <form class="footer-subscribe-form">
               <input
                 type="email"
                 placeholder="Enter your email"
-                class="form-control footer-input mb-3"
+                class="form-control footer-input mb-3 mb-md-0"
                 required
               />
-              <button type="submit" class="btn btn-primary footer-btn">
-                Subscribe
-              </button>
+              <button type="submit" class="btn footer-btn">Subscribe</button>
             </form>
             <p class="footer-privacy-text">
               By subscribing you agree to with our
-              <a href="#">Privacy Policy</a> and provide consent to receive
-              updates from our company.
+              <a href="#" class="footer-privacy">Privacy Policy</a> and provide
+              consent to receive updates from our company.
             </p>
           </div>
 
@@ -1133,9 +1173,7 @@
         <!-- Linha de baixo com termos, parágrafo e redes sociais -->
         <div class="row align-items-center footer-bottom">
           <!-- Políticas e termos -->
-          <div
-            class="col-12 col-md-4 footer-policies text-center text-md-start"
-          >
+          <div class="col-12 col-md-4 footer-policies text-center">
             <ul class="list-inline">
               <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
               <li class="list-inline-item"><a href="#">Terms of Service</a></li>
@@ -1145,25 +1183,26 @@
 
           <!-- Redes sociais -->
           <div class="col-12 col-md-4 footer-social-icons text-center">
+            <a href="#"><img src="./images/footer-git.png" alt="GitHub" /></a>
             <a href="#"
-              ><img src="./images/icon-facebook.png" alt="Facebook"
+              ><img src="./images/footer-youtube.png" alt="Youtube"
             /></a>
             <a href="#"
-              ><img src="./images/icon-twitter.png" alt="Twitter"
+              ><img src="./images/footer-discord.png" alt="discord"
             /></a>
             <a href="#"
-              ><img src="./images/icon-instagram.png" alt="Instagram"
+              ><img src="./images/footer-face.png" alt="facebook"
             /></a>
             <a href="#"
-              ><img src="./images/icon-youtube.png" alt="YouTube"
+              ><img src="./images/footer-insta.png" alt="instagram"
             /></a>
             <a href="#"
-              ><img src="./images/icon-linkedin.png" alt="LinkedIn"
+              ><img src="./images/footer-link.png" alt="linkedin"
             /></a>
           </div>
 
           <!-- Parágrafo final -->
-          <div class="col-12 col-md-4 footer-text text-center text-md-end">
+          <div class="col-12 col-md-3 footer-text text-center text-md-start">
             <p>&copy; 2023 Coreflux. All rights reserved.</p>
           </div>
         </div>

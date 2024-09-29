@@ -28,50 +28,63 @@ function checkTime(i) {
 startCountdown();
 //fim de controlo de relógio
 
-//Slider
-
-// botões
-const btnLeft = document.getElementById("prev_btn");
-const btnRight = document.getElementById("next_btn");
-
-// Slider
-const slider = document.querySelector(".container .slider");
-
-btnRight.addEventListener("click", nextSlide);
-function nextSlide() {
-  slider.appendChild(slider.firstElementChild);
-}
-
-btnLeft.addEventListener("click", prevSlide);
-function prevSlide() {
-  slider.prepend(slider.lastElementChild);
-}
-
-// slide automático
-function autoSlide() {
-  deleteInterval = setInterval(timer, 4000);
-  function timer() {
-    nextSlide();
+//slider industrial
+$(document).ready(function () {
+  function initializeSlider() {
+    if ($(window).width() <= 767) {
+      if (!$(".slider-cards").hasClass("slick-initialized")) {
+        $(".slider-cards").slick({
+          autoplay: false,
+          autoplaySpeed: 3000,
+          infinite: true,
+          speed: 500,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+        });
+      }
+    } else {
+      if ($(".slider-cards").hasClass("slick-initialized")) {
+        $(".slider-cards").slick("unslick");
+      }
+    }
   }
-}
-autoSlide();
 
-// para o slide automático com o rato por cima
-slider.addEventListener("mouseover", deleteAutoSliding);
-btnRight.addEventListener("mouseover", deleteAutoSliding);
-btnLeft.addEventListener("mouseover", deleteAutoSliding);
+  initializeSlider();
+  $(window).resize(function () {
+    initializeSlider();
+  });
+});
 
-function deleteAutoSliding() {
-  clearInterval(deleteInterval);
-}
+//workSlider
+$(document).ready(function () {
+  // Initialize slick for worker manufacturing slider
+  $(".worker-slider").slick({
+    autoplay: true,
+    autoplaySpeed: 3000,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    prevArrow: $("#prev_btn_worker"),
+    nextArrow: $("#next_btn_worker"),
+    centerMode: true,
+    variableWidth: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: false,
+          variableWidth: false,
+        },
+      },
+    ],
+  });
+});
 
-// Retoma o slide automatico quando rato sai
-slider.addEventListener("mouseout", autoSlide);
-btnRight.addEventListener("mouseout", autoSlide);
-btnLeft.addEventListener("mouseout", autoSlide);
-//fim de slider
-
-//slick slider
+//slick slider assets
 $(document).ready(function () {
   $(".assets-slider").slick({
     autoplay: true,
